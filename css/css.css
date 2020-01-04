@@ -1,0 +1,162 @@
+body{
+    margin: 0;
+    background-color: #8dc63f;
+    font-family: "Arial", sans-serif;
+}
+.clear::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.resize{
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 24px;
+    color: #39930d;
+}
+.top{
+    padding: 25px 0;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.top p,
+.top a{
+    font-weight: normal;
+    font-size: 22px;
+    color: #39930d;
+    margin: 0;
+    text-decoration: none;
+}
+.top b{
+    font-size: 44px;
+    color: #39930d;
+    display: block;
+}
+.top i{
+    font-size: 14px;
+    font-style: italic;
+    color: #5a5a5a;
+    display: block;
+}
+.top img{
+    margin-left: 34px;
+}
+.tels a{
+    margin-bottom: 7px;
+    display: block;
+}
+.tels i{
+    text-align: right;
+}
+.main-photo{
+    width: 100%;
+}
+.main{
+    margin: 0;
+}
+.main h2{
+    color: #39930d;
+    font-size: 24px;
+    font-weight: bold;
+}
+.description{
+    float: left;
+    width: 60%;
+    padding-bottom: 30px;
+}
+.description p{
+    color: #343434;
+    font-size: 14px;
+}
+.partners{
+    width: 300px;
+    float: right;
+    background-color: #fff;
+}
+.partners p{
+    color: #fff;
+    font-size: 18px;
+    background-color: #39930d;
+    padding: 13px 20px;
+    font-weight: normal;
+}
+.partners ul{
+    list-style: none;
+    padding-left: 20px;
+}
+.partners li{
+    margin-bottom: 14px;
+}
+.partners a{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #39930d;
+    list-style: none;
+    text-decoration: underline;
+}
+.bottom{
+    background-color: #39930d;
+    color: #fff;
+    margin: 0 -15px;
+}
+.bottom p{
+    padding: 17px 15px;
+    margin: 0;
+}
+@media screen and (max-width: 795px){
+    .description,
+    .partners{
+        width: 100%;
+    }
+    h1{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 640px){
+    .tels,
+    .logo{
+        float: none;
+        margin: 0 auto;
+    }
+    .logo{
+        width: 360px;
+        margin-bottom: 20px;
+    }
+    .tels{
+        width: 210px;
+        text-align: center;
+    }
+    .tels i{
+        text-align: center;
+    }
+    .main-photo{
+        min-height: 200px;
+        object-fit: cover;
+        object-position: 75%;
+    }
+}
+@media screen and (max-width: 400px){
+    .logo{
+        width: 100%;
+        text-align: center;
+    }
+    .logo p,
+    .logo img{
+        float: none;
+    }
+    .logo p{
+        margin-bottom: 20px;
+    }
+    .logo img{
+        margin: 0;
+    }
+}
